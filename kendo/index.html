@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NI PROJECT</title>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+    integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+  <link href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.common.min.css" rel="stylesheet" />
+  <link href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.default.min.css" rel="stylesheet" />
+  <script src="https://kendo.cdn.telerik.com/2022.1.412/js/jquery.min.js"></script>
+  <script src="https://kendo.cdn.telerik.com/2022.1.412/js/kendo.all.min.js"></script>
+  <script src="JS.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--<script src="https://kendo.cdn.telerik.com/2022.1.412/js/messages/kendo.messages.fr-FR.min.js"></script>-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md  navbar-light ">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item "><a class="nav-link" disabled>NI PROJECT</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div id="centerdates">
+
+    <input id="date_from" style="width:150px" />
+    <input id="date_to" style="width:150px" />
+    <button id="filterDate">FilterByDate</button>
+  </div>
+
+  <div id="data">
+
+    <label for="HourlyData"><input id="HourlyData" value="HourlyData" type="radio" name="Hourly-Daily"> Hourly</label>
+    <label for="DailyData"><input id="DailyData" value="DailyData" type="radio" name="Hourly-Daily"> Daily</label><br>
+
+  </div>
+
+
+
+
+
+  <div id="ordersGrid"></div>
+
+  <div id="choose">
+    <label for="MAXRXLEVEL"><input id="MAXRXLEVEL" value="MAXRXLEVEL" type="radio" name="KPI" checked> MAX RX
+      LEVEL</label>
+    <label for="MAXTXLEVEL"><input id="MAXTXLEVEL" value="MAXTXLEVEL" type="radio" name="KPI"> MAX TX LEVEL</label>
+    <label for="RSLDEVIATION"><input id="RSLDEVIATION" value="RSLDEVIATION" type="radio" name="KPI"> RSL
+      DEVIATION</label>
+  </div>
+
+  <div class="demo-section k-content wide">
+    <div id="ordersChart"></div>
+  </div>
+
+
+
+
+</body>
+
+</html>
